@@ -266,6 +266,25 @@ input::-ms-clear {
   text-align: center;
   line-height: 38px;
   font-weight: 900;
+  &-inner {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../img/title-before.svg") no-repeat;
+      top: -20px;
+      height: 60px;
+      width: 105px;
+    }
+    &:before {
+      left: -140px;
+    }
+    &:after {
+      right: -140px;
+      transform: scale(-1, 1);
+    }
+  }
 }
 .title-slab{
   font-family: Roboto Slab, serif;
@@ -330,7 +349,7 @@ input::-ms-clear {
 }
 
 @media screen and (max-width: 1190px) {
-
+ 
 }
 @media screen and (max-width: 1023px) {
 
