@@ -1,0 +1,121 @@
+.header{
+  padding: 38px 0 92px;
+  background: url("../img/header_bng.png") no-repeat center / cover;
+}
+
+.header__block{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  &__hunter{
+    position: absolute;
+    flex-shrink: 0;
+    width: 492px;
+    height: 705px;
+    background: url("../img/header_hunter.png") no-repeat;
+    top: -21px;
+    left: -32px;
+    z-index: 0;
+    img{
+      display: block;
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    margin: 0 42px 0 0;
+    flex-shrink: 0;
+  }
+  .logo{
+    margin: 0 0 16px;
+  }
+  .text{
+    color: #eee3d6;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 32px 0 25px;
+    line-height: 25px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    li{
+      display: flex;
+      align-items: center;
+      margin: 0 0 23px;
+      &:last-child{
+        margin: 0;
+      }
+      .check{
+        background: #9b3020 url("../img/check.svg") no-repeat center;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 0 1px #752918;
+      }
+      .list__text{
+        color: #ffffff;
+        font-size: 19px;
+        line-height: 21px;
+        margin: 0 0 0 16px;
+      }
+    }
+  }
+  &__form-pack{
+    display: flex;
+    flex-shrink: 0;
+  }
+  .pack-block{
+    position: absolute;
+    z-index: 5;
+    left: -13px;
+    bottom: -171px;
+    width: 473px;
+    img{
+      max-width: 100%;
+    }
+  }
+  .form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    margin: 45px 0 0;
+    .security{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 26px 0 0 0;
+      &__img{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background: #9b3020 url("../img/security.svg") no-repeat center;
+        margin: 0 6px 0 0;
+      }
+      &__text{
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) {
+
+}
+@media screen and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 639px) {
+
+}
