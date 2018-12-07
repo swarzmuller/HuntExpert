@@ -1,17 +1,130 @@
 .history {
-  height: 500px;
-  padding: 38px 0 92px;
+  padding: 71px 0 55px;
   background: #d3bda1 url("../img/biege__bgn.png");
+}
+.text__m-b{
+  color: #000000;
+  font-weight: 500;
 }
 
 .history__block{
+  display: flex;
+  flex-direction: column;
+  &__awards{
     display: flex;
-    flex-direction: column;
-    &__awards{
+    justify-content: center;
+    border-bottom: 1px solid #b9a182;
+    padding: 0 0 57px;
+    &__item{
       display: flex;
-      .item{
+      flex-direction: column;
+      width: 320px;
+      align-items: center;
+      .billet{
+        background: url("../img/plashka.png");
+        width: 100px;
+        height: 100px;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .text{
+        text-align: center;
+        color: #333333;
+        font-size: 20px;
+        margin: 11px  0 0;
       }
     }
+    &__dash{
+      background: url(../img/dashed.svg) no-repeat center;
+      width: 252px;
+      background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      margin:-64px -90px 0;
+    }
+  }
+  &__text{
+    padding: 63px 0 0;
+      .title-inner:before,
+      .title-inner:after{
+        top: -4px;
+      }
+  }
+
+}
+.some__history{
+  display: flex;
+  z-index: 0;
+  position: relative;
+  margin: 56px 0 0;
+  &__foto{
+    background:  url("../img/petr.png");
+    height: 200px;
+    width: 200px;
+    position: relative;
+    font-size: 120px;
+    color: #9b3020;
+    font-family: Roboto Slab, serif;
+    font-weight: 700;
+    line-height: 94px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: auto;
+    flex-shrink: 0;
+    margin: 7px 35px 0px 3px;
+    span{
+      position: relative;
+      z-index: -1;
+      margin: 0 16px 0 0;
+    }
+  }
+  &__descr{
+    display: flex;
+    .left, .right{
+      width: 467px;
+      .descr-text{
+        color: #444444;
+        font-size: 17px;
+        line-height: 25px;
+        margin: 0 0 26px;
+      }
+    }
+    .right{
+      hr{
+        background: #9b3020;
+        height: 2px;
+        border: none;
+        margin: 0 0 34px;
+      }
+      .last-italic{
+        font-size: 20px;
+        font-style: italic;
+        margin: 0;
+        line-height: 29px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .some__history__descr .left, .some__history__descr .right{
+    width: 45%;
+  }
+  .some__history__descr .right{
+    margin: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 1023px){
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+
 }
