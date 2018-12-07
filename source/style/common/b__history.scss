@@ -1,0 +1,17 @@
+.history {
+  height: 500px;
+  padding: 38px 0 92px;
+  background: #d3bda1 url("../img/biege__bgn.png");
+}
+
+.history__block{
+    display: flex;
+    flex-direction: column;
+    &__awards{
+      display: flex;
+      .item{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+}
