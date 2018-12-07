@@ -1,18 +1,23 @@
 .today {
 	background: url("../img/header_bng.png") no-repeat center / cover;
-	height: 500px;
 	padding: 40px 0;
+	&-title {
+		margin-bottom: 35px;
+	}
 	&-slogan {
 		color: #eee3d6;
 		font-size: 22px;
+		font-weight: 400;
 		text-align: center;
 		position: relative;
+		margin-bottom: 50px;
 		&:before {
 			content: "";
 			position: absolute;
 			background: url("../img/bullet-red.png") no-repeat;
-			top: -50px;
+			top: -20px;
 			left: 50%;
+			transform: translate(-50%, 0);
 			width: 30px;
 			height: 13px;
 		}
