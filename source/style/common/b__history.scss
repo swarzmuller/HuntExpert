@@ -109,22 +109,100 @@
   }
 }
 @media (max-width: 1200px) {
+  .some__history__descr{
+    justify-content: space-between;
+  }
   .some__history__descr .left, .some__history__descr .right{
     width: 45%;
   }
   .some__history__descr .right{
     margin: 0 0 0 15px;
   }
+  .some__history__descr .right hr,
+  .some__history__descr .left .descr-text, .some__history__descr .right .descr-text{
+    margin: 0 0 7px;
+  }
 }
 
 @media (max-width: 1023px){
-
+  .history__block__text .title-inner:before, .history__block__text .title-inner:after{
+    display: none;
+  }
+  .some__history{
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 0 0;
+  }
+  .history__block__awards{
+    padding: 0 0 28px;
+  }
+  .history__block__awards__dash{
+    display: none;
+  }
+  .history__block__awards__item .text{
+    font-size: 17px;
+  }
+  .some__history__descr .left, .some__history__descr .right{
+    width: 50%;
+  }
+  .history__block__text{
+    padding: 18px 0 0;
+  }
+  .some__history__foto{
+    margin: 18px 0 24px 0px;
+  }
+  .some__history__descr .right .last-italic{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 767px) {
+  .history__block__awards__item{
+    margin: 0 10px;
+  }
+  .history__block__awards__item .text{
+    font-size: 15px;
+  }
 
+  .some__history__foto{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    margin: 3px 0 15px 0px;
+  }
+  .some__history__descr .left .descr-text, .some__history__descr .right .descr-text{
+    font-size: 16px;
+    line-height: 17px;
+  }
 }
 
 @media (max-width: 479px) {
-
+  .history__block__awards{
+    flex-direction: column;
+  }
+  .history__block__awards__item{
+    flex-direction: row;
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  .history__block__awards__item .billet{
+    flex-shrink: 0;
+    background-size: contain;
+    width: 73px;
+    height: 73px;
+    img{
+      max-width: 100%;
+    }
+  }
+  .history__block__awards__item .text{
+    text-align: left;
+    margin: 0 0 0 15px;
+  }
+  .some__history__descr{
+    flex-direction: column;
+  }
+  .some__history__descr .left, .some__history__descr .right{
+    width: 100%;
+    margin: 0;
+  }
 }
