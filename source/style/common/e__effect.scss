@@ -1,0 +1,80 @@
+.effect{
+  background: url(../img/header_bng.png) no-repeat center/cover;
+  padding: 85px 0;
+  .title-inner:before, .title-inner:after{
+    top: -7px;
+  }
+  .title-inner:after{
+    right: -288px;
+  }
+}
+.text-italic{
+  font-style: italic;
+  color: #dfbd96;
+  font-weight: 500;
+}
+.effect__block{
+  display: flex;
+  justify-content: center;
+  margin: 44px 0 0;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    align-items: center;
+    .number{
+      background: #9b3020;
+      border-radius: 50%;
+      height: 42px;
+      width: 42px;
+      font-size: 30px;
+      color: #ffffff;
+      font-family: Roboto Slab, serif;
+      flex-shrink: 0;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 0 1px #752918;
+      position: relative;
+      margin: 0 0 30px;
+      &:after{
+        background: #9b3020;
+        width: 1px;
+        height: 31px;
+        content: '';
+        position: absolute;
+        top: 40px;
+      }
+    }
+    .image__block{
+      border: 5px solid #b9a182;
+      border-radius: 5px;
+      background: #b9a182;
+      img{
+        display: block;
+        border-radius: 5px;
+      }
+    }
+    .text{
+      text-align: center;
+      color: #eee3d6;
+      font-size: 19px;
+      font-weight: 700;
+      margin: 40px 0 0;
+    }
+  }
+}
+.effect__block__item.center{
+  margin: 0 55px;
+  position: relative;
+  &:after{
+    background: url(../img/dashed.svg) no-repeat center;
+    width: 252px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+  }
+}
